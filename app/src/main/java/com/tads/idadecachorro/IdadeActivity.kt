@@ -34,7 +34,7 @@ class IdadeActivity : AppCompatActivity() {
 
 
             val soma = valorIdade * 7
-            text_idade.setText("A idade de Seu pet é "+ soma.toString()+" Anos")
+            text_idade.setText("A idade de Seu PET é "+ soma.toString()+" Anos")
         }
     }
 

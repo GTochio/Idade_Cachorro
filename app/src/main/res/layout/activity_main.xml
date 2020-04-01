@@ -4,18 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF7E7E"
+    android:background="#B57EFF9E"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="90dp"
-        android:layout_marginRight="90dp"
+        android:layout_height="272dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,20 +21,19 @@
         android:id="@+id/button_descubra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="btCalcular"
+        android:onClick="btCalcula"
         android:text="Descubra a Idade"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idadeCachorro" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="315dp"
-        android:layout_height="0dp"
+        android:layout_width="395dp"
+        android:layout_height="65dp"
         android:layout_marginTop="20dp"
-        android:text="Informe a idade do Cachorro, e descubra a idade humana dele"
+        android:text="Informe a idade de seu DOG, e descubra a idade de Humano do seu DOG"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,14 +41,16 @@
 
     <EditText
         android:id="@+id/idadeCachorro"
-        android:layout_width="322dp"
+        style="@android:style/Widget.EditText"
+        android:layout_width="329dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="Informe a Idade do seu PET"
         android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
